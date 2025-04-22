@@ -4,12 +4,12 @@ import { Github, Linkedin } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="min-h-[90vh] flex items-center justify-center py-16">
+    <section id="hero" className="flex items-center justify-center py-32">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 space-y-6">
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-              Juan <span className="text-primary">Beresiarte</span>
+              Juan <span className="text-primary hover:border-b-4 hover:border-b-primary transition-all">Beresiarte</span>
             </h1>
             <h2 className="text-xl text-muted-foreground">
               Desarrollador Fullstack & Arquitecto de Software
@@ -23,7 +23,7 @@ const HeroSection = () => {
               </a>
               <div className="flex items-center gap-4">
                 <a 
-                  href="https://github.com/juanberesiarte" 
+                  href="https://github.com/beresiartejuan" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -31,7 +31,7 @@ const HeroSection = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com/in/juanberesiarte" 
+                  href="https://linkedin.com/in/beresiartejuan" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -47,7 +47,7 @@ const HeroSection = () => {
               <img 
                 src="/me.jpeg" 
                 alt="Juan Beresiarte" 
-                className="relative z-10 w-full h-full object-cover rounded-md border-2 border-primary/20"
+                className="relative z-10 w-full h-full object-cover rounded-md border-2 border-primary/20 transition-all hover:rotate-2 hover:shadow-xl hover:shadow-primary/70"
               />
             </div>
           </div>
