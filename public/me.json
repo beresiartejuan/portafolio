@@ -1,0 +1,10 @@
+{
+    "name": "Juan",
+    "lastname": "Beresiarte",
+    "fullname": "Juan Beresiarte",
+    "age": 22,
+    "email": "juanberesiarte@gmail.com",
+    "country": "Argentina",
+    "roles": ["Backend", "Frontend", "Fullstack"],
+    "tecnologies": ["NodeJS", "Javascript", "React", "SQL", "MySQL", "MongoDB", "PHP", "Laravel", "NextJS", "Astro", "Html", "Css"]
+}
