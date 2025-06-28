@@ -1,36 +1,14 @@
-import { Code, Database, Server } from 'lucide-react';
-
 const AboutSection = () => {
   return (
-    <section id="about" className="py-10">
+    <section id="about" className="pt-6 pb-14">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-10 text-center">Sobre mí</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center">
-              <Code size={24} className="text-primary" />
-            </div>
-            <h3 className="font-medium">Frontend Developer</h3>
-          </div>
-          
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center">
-              <Database size={24} className="text-primary" />
-            </div>
-            <h3 className="font-medium">Backend Developer</h3>
-          </div>
-          
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center">
-              <Server size={24} className="text-primary" />
-            </div>
-            <h3 className="font-medium">Fullstack Developer</h3>
-          </div>
-        </div>
-
-        <div className="prose prose-invert max-w-none">
+        <h2 className="text-4xl font-bold mb-14 text-center">Sobre mí</h2>
+        <div className="prose prose-invert max-w-none pb-6">
           <p className="text-muted-foreground text-center text-lg leading-relaxed">
-            Como arquitecto de software y cofundador de CROBF, me especializo en diseñar soluciones tecnológicas que combinan innovación y escalabilidad. Mi enfoque se centra en crear experiencias digitales que impacten positivamente en los usuarios y generen valor real para las empresas.
+            Soy <mark>desarrollador fullstack</mark> y me gusta crear aplicaciones que realmente le sirvan a la gente, ya sea para ahorrarles tiempo o facilitar algo que antes era complicado.
+          </p>
+          <p className="text-muted-foreground text-center text-lg leading-relaxed mt-5">
+            <mark>Trabajo con JavaScript</mark> y tengo una filosofía simple: prefiero invertir tiempo al principio para hacer las cosas bien que estar parcheando problemas después. Me considero autodidacta y disfruto cuando puedo resolver un problema técnico complejo y el resultado termina siendo algo genuinamente útil.
           </p>
         </div>
       </div>

@@ -1,5 +1,4 @@
-
-import React from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import { Mail, MapPin, Send, Linkedin, Github, FileText, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
@@ -7,16 +6,16 @@ import ProjectInquiryModal from './ProjectInquiryModal';
 
 const ContactSection = () => {
   const { toast } = useToast();
-  const [showProjectModal, setShowProjectModal] = React.useState(false);
-  const [formData, setFormData] = React.useState({
+  const [showProjectModal, setShowProjectModal] = useState(false);
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -24,7 +23,7 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     

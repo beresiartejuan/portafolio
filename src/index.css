@@ -88,3 +88,7 @@
     @apply bg-secondary hover:bg-secondary/90 text-secondary-foreground font-medium rounded-md px-4 py-2 transition-colors;
   }
 }
+
+mark {
+  @apply bg-primary/30 text-primary-foreground px-1;
+}
