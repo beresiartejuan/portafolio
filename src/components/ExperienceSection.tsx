@@ -13,9 +13,9 @@ interface Experience {
 const experienceData: Experience[] = [
   {
     id: 1,
-    position: "Cofundador & CTO",
+    position: "Cofundador & Desarrollador Fullstack",
     company: "CROBF",
-    period: "2018 - Presente",
+    period: "2024 - Presente",
     responsibilities: [
       "Liderazgo en la estrategia tecnológica y arquitectura de software de la empresa.",
       "Desarrollo y mantenimiento de CROBF Hub, plataforma central para la gestión de proyectos.",
@@ -27,29 +27,15 @@ const experienceData: Experience[] = [
   },
   {
     id: 2,
-    position: "Senior Fullstack Developer",
+    position: "Desarrollador Fullstack",
     company: "HexaDevs",
-    period: "2015 - 2018",
+    period: "2024 - actualidad",
     responsibilities: [
       "Desarrollo de aplicaciones web complejas utilizando React, Node.js y bases de datos NoSQL.",
       "Implementación de arquitecturas de microservicios para mejorar la escalabilidad.",
-      "Colaboración en la optimización de rendimiento y seguridad de aplicaciones existentes.",
-      "Mentoría a desarrolladores junior y liderazgo técnico en proyectos clave."
+      "Colaboración en la optimización de rendimiento y seguridad de aplicaciones existentes."
     ],
-    animationDelay: "0.1s"
-  },
-  {
-    id: 3,
-    position: "Frontend Developer",
-    company: "Secretum Technologies",
-    period: "2013 - 2015",
-    responsibilities: [
-      "Diseño e implementación de interfaces de usuario para aplicaciones web con enfoque en UX/UI.",
-      "Desarrollo frontend con HTML5, CSS3, JavaScript y frameworks como Angular.",
-      "Integración con APIs RESTful y optimización del rendimiento en el lado del cliente.",
-      "Participación en la implementación de pruebas automatizadas y despliegue continuo."
-    ],
-    animationDelay: "0.2s"
+    animationDelay: "0.3s"
   }
 ];
 
