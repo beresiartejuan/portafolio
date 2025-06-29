@@ -21,7 +21,7 @@ const ProjectsSection = () => {
       category: "frontend"
     },
     {
-      title: "TypingCheck",
+      title: "Typing Check",
       description: "Aplicación web para practicar y mejorar la velocidad de escritura con estadísticas.",
       tags: ["JavaScript", "React"],
       link: "https://beresiartejuan.github.io/typing-check/",
