@@ -8,7 +8,7 @@ const ProjectsSection = () => {
       title: "bunny.js",
       description: "Librería JavaScript ligera para manipulación del DOM y animaciones con enfoque en rendimiento y tamaño reducido.",
       tags: ["JavaScript"],
-      link: "https://bunny-js.dev",
+      link: "https://bunny-js.crobf.tech",
       github: "https://github.com/CROBF-tech/bunny-js",
       category: "frontend"
     },
