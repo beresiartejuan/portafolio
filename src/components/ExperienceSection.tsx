@@ -20,8 +20,7 @@ const experienceData: Experience[] = [
       "Liderazgo en la estrategia tecnológica y arquitectura de software de la empresa.",
       "Desarrollo y mantenimiento de CROBF Hub, plataforma central para la gestión de proyectos.",
       "Implementación de metodologías ágiles y mejores prácticas de desarrollo.",
-      "Supervisión de equipos de desarrollo fullstack para múltiples proyectos.",
-      "Creación de CROBF Labs, división dedicada a la investigación y desarrollo de tecnologías innovadoras."
+      "Supervisión de equipos de desarrollo fullstack para múltiples proyectos."
     ],
     animationDelay: "0s"
   },
@@ -29,15 +28,69 @@ const experienceData: Experience[] = [
     id: 2,
     position: "Desarrollador Fullstack",
     company: "HexaDevs",
-    period: "2024 - actualidad",
+    period: "2025 - Presente",
     responsibilities: [
-      "Desarrollo de aplicaciones web complejas utilizando React, Node.js y bases de datos NoSQL.",
-      "Implementación de arquitecturas de microservicios para mejorar la escalabilidad.",
-      "Colaboración en la optimización de rendimiento y seguridad de aplicaciones existentes."
+      "Contribución en la fase inicial del proyecto y definición tecnológica.",
+      "Desarrollo de una academia virtual construida con Astro y TailwindCSS.",
+      "Gestión de rutas de contenido para los cursos",
+      "Implementación del sistema de login con Auth0.",
+      "Optimización del rendimiento del frontend en Astro."
     ],
-    animationDelay: "0.3s"
+    animationDelay: "0.2s"
+  },
+  {
+    id: 3,
+    position: "Desarrollador Fullstack",
+    company: "Automóviles Atuel",
+    period: "2024 - 2025",
+    responsibilities: [
+      "Desarrollo de un sitio auto-administrable para concesionaria de autos.",
+      "Implementación de CRUD para vehículos y filtros avanzados de búsqueda.",
+      "Diseñado para permitir gestión sin intervención técnica por parte del cliente."
+    ],
+    animationDelay: "0.4s"
+  },
+  {
+    id: 4,
+    position: "Desarrollador Fullstack",
+    company: "Única - Sistema de gestión para tienda de ropa",
+    period: "2025",
+    responsibilities: [
+      "Desarrollo de una app intuitiva para reemplazar el control manual de stock.",
+      "Gestión de productos, precios, etiquetas e inventario de forma simple y rápida.",
+      "Implementación de un sistema de caché para mejorar el rendimiento diario.",
+      "La solución permitió mayor organización, eficiencia y reducción de costes en la tienda."
+    ],
+    animationDelay: "0.6s"
+  },
+  {
+    id: 6,
+    position: "Tutor de Programación",
+    company: "Clases Particulares",
+    period: "2023 - 2024",
+    responsibilities: [
+      "Enseñanza personalizada de desarrollo web, desde fundamentos hasta temas avanzados.",
+      "Adaptación del contenido a cada estudiante y sus objetivos personales.",
+      "Transmisión del entusiasmo por el desarrollo como parte del proceso de aprendizaje.",
+      "Fortalecimiento de habilidades de comunicación técnica."
+    ],
+    animationDelay: "1s"
+  },
+  {
+    id: 7,
+    position: "Desarrollador Fullstack Freelance",
+    company: "Fiverr",
+    period: "2023 - 2024",
+    responsibilities: [
+      "Desarrollo de soluciones personalizadas para clientes internacionales.",
+      "Creación de aplicaciones web usando React y Node.js.",
+      "Gestión de proyectos de principio a fin incluyendo planificación, desarrollo y entrega."
+    ],
+    animationDelay: "1.2s"
   }
 ];
+
+
 
 const ExperienceCard: React.FC<{ experience: Experience }> = ({ experience }) => {
   return (
