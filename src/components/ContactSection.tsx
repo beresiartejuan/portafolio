@@ -50,7 +50,7 @@ const ContactSection = () => {
                 <Mail className="text-primary mt-1" size={20} />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-muted-foreground">juan@ejemplo.com</p>
+                  <p className="text-muted-foreground">juanberesiarte@gmail.com</p>
                 </div>
               </div>
 
@@ -58,7 +58,7 @@ const ContactSection = () => {
                 <MapPin className="text-primary mt-1" size={20} />
                 <div>
                   <h4 className="font-medium">Ubicación</h4>
-                  <p className="text-muted-foreground">Buenos Aires, Argentina</p>
+                  <p className="text-muted-foreground">Mendoza, Argentina</p>
                 </div>
               </div>
 

@@ -3,8 +3,6 @@ import AstroIcon from './icons/astro.icon';
 import CSSIcon from './icons/css.icon';
 import ExpressIcon from './icons/express.icon';
 import GitIcon from './icons/git.icon';
-import JavaScriptIcon from './icons/js.icon';
-import JWTIcon from './icons/jwt.icon';
 import LaravelIcon from './icons/laravel.icon';
 import MongoDBIcon from './icons/mongodb.icon';
 import NodeIcon from './icons/node.icon';
@@ -13,15 +11,12 @@ import PostgreSQLIcon from './icons/postgresql.icon';
 import ReactIcon from './icons/react.icon';
 import RedisIcon from './icons/redis.icon';
 import SassIcon from './icons/sass.icon';
-import SWCIcon from './icons/swc.icon';
 import TailwindIcon from './icons/tailwind.icon';
 import TypeScriptIcon from './icons/ts.icon';
-import TursoIcon from './icons/turso.icon';
 
 // Define the skills data with their corresponding icons and names
 const skills = [
   // Programming Languages
-  { icon: JavaScriptIcon, name: 'JavaScript' },
   { icon: TypeScriptIcon, name: 'TypeScript' },
   { icon: PHPIcon, name: 'PHP' },
 
@@ -38,7 +33,6 @@ const skills = [
   { icon: MongoDBIcon, name: 'MongoDB' },
   { icon: PostgreSQLIcon, name: 'PostgreSQL' },
   { icon: RedisIcon, name: 'Redis' },
-  { icon: TursoIcon, name: 'Turso' },
 
   // Styling
   { icon: TailwindIcon, name: 'Tailwind CSS' },
