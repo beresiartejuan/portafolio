@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-heading">Sobre mí</h2>
 
-        <div className="pb-4 max-w-4xl mx-auto text-center text-pretty">
+        <div className="pb-4 max-w-4xl text-pretty">
           <p className="text-muted-foreground text-lg leading-relaxed">
             Soy un desarrollador con una fuerte curiosidad por cómo funcionan las cosas y una obsesión sana por hacerlas bien.
             Me gusta crear{' '}
