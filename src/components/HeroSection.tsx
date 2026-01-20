@@ -2,7 +2,7 @@ import { Github, Linkedin } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="flex items-center justify-center py-[25vh]">
+    <section id="hero" className="flex items-center justify-center py-[15vh]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 space-y-6">
