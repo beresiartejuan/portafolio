@@ -77,39 +77,41 @@ const ContactForm = ({
   }, [state.succeeded, onSubmit, showSubject]);
 
   return (
-    <form onSubmit={handleSubmit} className={`space-y-4 ${className}`}>
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium mb-1">Nombre</label>
-        <Input
-          id="name"
-          name="name"
-          type="text"
-          required
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <ValidationError 
-          prefix="Name" 
-          field="name"
-          errors={state.errors}
-        />
-      </div>
-      
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-        <Input
-          id="email"
-          name="email"
-          type="email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <ValidationError 
-          prefix="Email" 
-          field="email"
-          errors={state.errors}
-        />
+    <form onSubmit={handleSubmit} className={`space-y-5 ${className}`}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium mb-1.5">Nombre</label>
+          <Input
+            id="name"
+            name="name"
+            type="text"
+            required
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <ValidationError 
+            prefix="Name" 
+            field="name"
+            errors={state.errors}
+          />
+        </div>
+        
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium mb-1.5">Email</label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+          />
+        </div>
       </div>
       
       {/* Conditionally render subject field */}

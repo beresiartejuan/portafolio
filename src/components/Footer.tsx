@@ -6,41 +6,39 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-secondary/30 py-10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center">
-          <div className="flex space-x-6 mb-6">
+    <footer className="py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} Juan Beresiarte
+          </p>
+          
+          <div className="flex items-center gap-5">
             <a 
               href="https://github.com/juanberesiarte" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="GitHub"
             >
-              <Github size={20} />
+              <Github size={18} />
             </a>
             <a 
               href="https://linkedin.com/in/juanberesiarte" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin size={18} />
             </a>
             <a 
-              href="mailto:juan@ejemplo.com" 
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              href="mailto:juanberesiarte@gmail.com" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Email"
             >
-              <Mail size={20} />
+              <Mail size={18} />
             </a>
-          </div>
-          
-          <div className="text-center">
-            <p className="text-muted-foreground text-sm">
-              &copy; {currentYear} Juan Beresiarte. Todos los derechos reservados.
-            </p>
-            <p className="text-muted-foreground text-xs mt-2">
-              Desarrollado con React, TypeScript y Tailwind CSS
-            </p>
           </div>
         </div>
       </div>

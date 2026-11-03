@@ -8,11 +8,13 @@ import SkillsSection from '@/components/SkillsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import Navbar from '@/components/Navbar';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <main> {/* Removed pt-16 as there's no navbar */}
+      <Navbar />
+      <main className="pt-14">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
