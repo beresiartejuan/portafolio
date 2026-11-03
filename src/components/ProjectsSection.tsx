@@ -3,6 +3,33 @@ import Reveal from './Reveal';
 
 const projects = [
   {
+    title: "Fabrik",
+    description: "Gestión de fábrica: lotes, recetas y trazabilidad. Monorepo TypeScript con dominio DDD puro, API en NestJS + Turso y app en Next.js con demo sin backend.",
+    tags: ["TypeScript", "NestJS", "Next.js", "DDD"],
+    image: "/projects/fabrik-js.png",
+    link: "https://beresiartejuan.github.io/fabrik-js/",
+    github: "https://github.com/beresiartejuan/fabrik-js",
+    category: "fullstack"
+  },
+  {
+    title: "Colors",
+    description: "Visualizador de paletas de color sobre plantillas reales para ver cómo se comporta una paleta antes de usarla.",
+    tags: ["TypeScript", "React", "Tailwind CSS"],
+    image: "/projects/colors.png",
+    link: "https://colors.beresiarte.xyz",
+    github: "https://github.com/beresiartejuan/colors",
+    category: "frontend"
+  },
+  {
+    title: "Aki",
+    description: "Agente de IA autónomo: gateway de Telegram, agent core con Ollama y sandbox de ejecución en Docker.",
+    tags: ["TypeScript", "Ollama", "Docker"],
+    image: "/projects/aki-assistant-ai.png",
+    link: "https://aki.beresiarte.xyz",
+    github: "https://github.com/beresiartejuan/aki-assistant-ai",
+    category: "backend"
+  },
+  {
     title: "bunny.js",
     description: "Librería JavaScript ligera para manipulación del DOM y animaciones con enfoque en rendimiento y tamaño reducido.",
     tags: ["JavaScript"],

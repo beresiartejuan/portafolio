@@ -1,30 +1,10 @@
 
-import { useState, useCallback } from 'react';
 import { Mail, MapPin, Linkedin, Github, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useToast } from '@/hooks/use-toast';
 import Reveal from './Reveal';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
-import ContactForm, { ContactFormData } from './ContactForm';
+import ContactForm from './ContactForm';
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const [showProjectModal, setShowProjectModal] = useState(false);
-
-  const handleProjectInquirySubmit = useCallback((_formData: ContactFormData) => {
-    toast({
-      title: "Propuesta enviada",
-      description: "Gracias por tu interés. Te responderé en 1-2 días hábiles.",
-    });
-    setShowProjectModal(false);
-  }, [toast]);
-
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/cv_juan_beresiarte.pdf';
@@ -43,7 +23,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mt-2">
           <div className="space-y-8">
             <p className="text-foreground/85 leading-relaxed text-lg">
-                Estoy abierto a oportunidades de freelance, colaboraciones en proyectos interesantes o simplemente charlar sobre tecnología.
+                Actualmente estoy buscando empleo como programador. Si tenés una oportunidad o querés charlar sobre tecnología, escribime.
               </p>
 
             <div className="space-y-4">
@@ -61,14 +41,6 @@ const ContactSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={() => setShowProjectModal(true)}
-                variant="outline"
-                className="text-sm"
-              >
-                ¿Necesitas un freelancer?
-              </Button>
-
               <Button
                 onClick={handleDownloadCV}
                 variant="ghost"
@@ -110,26 +82,6 @@ const ContactSection = () => {
         </div>
         </Reveal>
       </div>
-
-      {/* Project Inquiry Modal */}
-      <Dialog open={showProjectModal} onOpenChange={setShowProjectModal}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Nuevo Proyecto</DialogTitle>
-            <DialogDescription>
-              Cuéntame sobre tu proyecto. Te responderé en 1-2 días hábiles.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="mt-4">
-            <ContactForm
-              showSubject={false}
-              onSubmit={handleProjectInquirySubmit}
-              submitButtonText="Enviar Propuesta"
-              formspreeKey="xyzeqker"
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 };

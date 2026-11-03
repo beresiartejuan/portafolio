@@ -1,11 +1,10 @@
 # Portafolio — Juan Beresiarte
 
-Mi portafolio personal: presentación, experiencia, habilidades y proyectos, con un formulario de contacto y una sección de servicios freelance (servicios y precios).
+Mi portafolio personal: presentación, experiencia, habilidades y proyectos, con un formulario de contacto.
 
 ## Secciones
 
 - Inicio, sobre mí, experiencia, habilidades, proyectos y contacto
-- Servicios freelance con precios y formulario de contacto propio
 - Formulario conectado a Formspree
 
 ## Stack

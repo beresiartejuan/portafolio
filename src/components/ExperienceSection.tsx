@@ -48,8 +48,8 @@ const experienceData: Experience[] = [
   },
   {
     id: 4,
-    position: "Desarrollador Fullstack",
-    company: "Única — Sistema de gestión para tienda de ropa",
+    position: "Desarrollador Fullstack · Sistema de gestión para tienda de ropa",
+    company: "Única",
     period: "2025",
     responsibilities: [
       "Desarrollo de una app intuitiva para reemplazar el control manual de stock.",
@@ -83,46 +83,36 @@ const experienceData: Experience[] = [
   }
 ];
 
-const ExperienceCard: React.FC<{ experience: Experience; isLast: boolean }> = ({ experience, isLast }) => {
+const ExperienceCard: React.FC<{ experience: Experience }> = ({ experience }) => {
   return (
-    <div className="relative pl-8 pb-12 last:pb-0">
-      <div className="absolute left-0 top-2 w-[11px] h-[11px] rounded-full bg-primary/70" />
-
-      <div className="space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-          <div>
-            <h3 className="text-base font-medium text-foreground">{experience.position}</h3>
-            <p className="text-sm text-muted-foreground">{experience.company}</p>
-          </div>
-          <span className="text-sm text-muted-foreground tabular-nums">{experience.period}</span>
-        </div>
-
-        <ul className="space-y-2 text-base text-foreground/85 leading-relaxed">
-          {experience.responsibilities.map((responsibility, index) => (
-            <li key={index} className="flex gap-3">
-              <span className="text-primary/60 mt-0.5">•</span>
-              <span>{responsibility}</span>
-            </li>
-          ))}
-        </ul>
+    <article className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-5">
+      <div className="md:col-span-5">
+        <p className="text-sm text-primary tabular-nums">{experience.period}</p>
+        <h3 className="mt-2 text-2xl md:text-3xl font-semibold tracking-[-0.02em] leading-tight text-foreground">
+          {experience.company}
+        </h3>
+        <p className="mt-1 text-base text-muted-foreground">{experience.position}</p>
       </div>
-    </div>
+
+      <ul className="md:col-span-7 space-y-3 text-base text-foreground leading-relaxed">
+        {experience.responsibilities.map((responsibility, index) => (
+          <li key={index}>{responsibility}</li>
+        ))}
+      </ul>
+    </article>
   );
 };
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-16 md:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-heading">Experiencia laboral</h2>
 
-        <div>
+        <div className="space-y-12 md:space-y-14">
           {experienceData.map((experience, index) => (
             <Reveal key={experience.id} delay={Math.min(index * 60, 180)}>
-              <ExperienceCard
-                experience={experience}
-                isLast={index === experienceData.length - 1}
-              />
+              <ExperienceCard experience={experience} />
             </Reveal>
           ))}
         </div>

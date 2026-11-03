@@ -6,7 +6,7 @@ const facts = [
   ["Dónde estoy", "Mendoza, Argentina"],
   ["Qué hago", "Fullstack & arquitectura de software"],
   ["En qué ando", "TypeScript, React, Astro, Node.js"],
-  ["Buscando", "Freelance & colaboraciones"],
+  ["Buscando", "Empleo como programador"],
 ];
 
 const AboutSection = () => {
